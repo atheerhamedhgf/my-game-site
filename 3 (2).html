@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الألعاب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff9f43;
+        }
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .game-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+        }
+        .game-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #ff9f43;
+        }
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .game-card button {
+            padding: 10px 20px;
+            background: #ff6b6b;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        .game-card button:hover {
+            background: #ff4757;
+        }
+    </style>
+</head>
+<body>
+    <h1>مرحبًا بكم في موقع الألعاب</h1>
+    <div class="game-container">
+        <!-- لعبة الأفعى -->
+        <div class="game-card">
+            <h2>لعبة الأفعى (Snake)</h2>
+            <img src="https://via.placeholder.com/300x150?text=صورة+لعبة+الأفعى" alt="لعبة الأفعى">
+            <button onclick="alert('لعبة الأفعى قريبًا!')">لعب الآن</button>
+        </div>
+        <!-- لعبة Flappy Bird -->
+        <div class="game-card">
+            <h2>لعبة Flappy Bird</h2>
+            <img src="https://via.placeholder.com/300x150?text=صورة+لعبة+Flappy+Bird" alt="لعبة Flappy Bird">
+            <button onclick="alert('لعبة Flappy Bird قريبًا!')">لعب الآن</button>
+        </div>
+        <!-- لعبة إكس أو -->
+        <div class="game-card">
+            <h2>لعبة إكس أو (Tic-Tac-Toe)</h2>
+            <img src="https://via.placeholder.com/300x150?text=صورة+لعبة+إكس+أو" alt="لعبة إكس أو">
+            <button onclick="alert('لعبة إكس أو قريبًا!')">لعب الآن</button>
+        </div>
+    </div>
+</body>
+</html>
